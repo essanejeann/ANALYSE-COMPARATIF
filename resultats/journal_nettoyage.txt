@@ -1,0 +1,21 @@
+1. Marché Lagune : doublon référence 'ML-1000' (SAMSUNG GALAXY A15 (128GB)) - supprimé
+2. Marché Lagune : doublon référence 'ML-1147' (TV HISENSE 32") - supprimé
+3. Marché Lagune : espaces superflus dans '  souris sans fil logitech m185 ' nettoyés
+4. Marché Lagune : prix non exploitable pour 'ECRAN SAMSUNG 24"' (valeur: 'Prix sur demande')
+5. Marché Lagune : prix non exploitable pour 'MIXEUR MOULINEX 1.5L' (valeur: 'nan')
+6. Marché Lagune : prix aberrant 779,000 FCFA pour 'TECNO SPARK 20 - 128GB' exclu
+7. Baobab Shop : prix null pour 'Philips Steam Iron' - exclu
+8. Baobab Shop : 'Galaxy A55 256GB - Samsung' en rupture de stock (stock=0)
+9. Baobab Shop : 'Logitech M185 Wireless Mouse' en rupture de stock (stock=0)
+10. Baobab Shop : 'Hisense Air Conditioner 1.5HP' en rupture de stock (stock=0)
+11. Comptoir Ivoire : remise de 15% appliquée sur 'Samsun Galaxy A15 128Go' (109,400 -> 92,990 FCFA)
+12. Comptoir Ivoire : remise de 5% appliquée sur 'Infinix Hot 40i' (70,700 -> 67,165 FCFA)
+13. Comptoir Ivoire : remise de 5% appliquée sur 'Itel A70' (45,200 -> 42,940 FCFA)
+14. Comptoir Ivoire : remise de 5% appliquée sur 'Lenovo IdeaPad 3 i3' (302,500 -> 287,375 FCFA)
+15. Comptoir Ivoire : remise de 10% appliquée sur 'Dell Inspiron 15 i5' (451,400 -> 406,260 FCFA)
+16. Comptoir Ivoire : remise de 15% appliquée sur 'Frigo Hisense 205L' (198,100 -> 168,385 FCFA)
+17. Comptoir Ivoire : remise de 15% appliquée sur 'Congélateur Nasco 200L' (178,500 -> 151,725 FCFA)
+18. Comptoir Ivoire : remise de 5% appliquée sur 'TV Samsung 43"' (254,000 -> 241,300 FCFA)
+19. Comptoir Ivoire : remise de 10% appliquée sur 'TV Hisense 32"' (98,600 -> 88,740 FCFA)
+20. Comptoir Ivoire : 'TV Samsung 43"' en rupture (quantité=0)
+21. Comptoir Ivoire : 'Ventilo Binatone 16"' en rupture (quantité=0)

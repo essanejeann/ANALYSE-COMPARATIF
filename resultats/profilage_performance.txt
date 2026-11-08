@@ -1,0 +1,36 @@
+
+================================================================================
+TABLEAU DE BORD DE PERFORMANCE & COMPLEXITÉ
+================================================================================
+
+1. ARCHITECTURE ET CHOIX DES STRUCTURES DE DONNÉES :
+   --------------------------------------------------
+   a) Rapprochement Catalogue :
+      • Problème : Scanner 30 produits pour chaque ligne d'enseigne coûte O(N * M).
+      • Solution : Indexation préalable des tokens en `sets` de hash-table O(1).
+      • Complexité : O(N) au lieu de O(N * M * K). Exécution en ~7.09 ms.
+
+   b) Traitement du Comparatif :
+      • Problème : `df.apply(..., axis=1)` crée des séries Python et induit un surcoût massif.
+      • Solution : Vectorisation NumPy 2D (`np.nanmin`, `np.nanmax`, `np.nanargmin`).
+      • Complexité : O(N * C) en temps constant ultra-rapide (C = 3 enseignes). Exécution en ~18.68 ms.
+
+   c) Historique (20 876 lignes) :
+      • Problème : Le parsing datetime (`pd.to_datetime`) prend ~70 ms à lui seul.
+      • Solution 1 : Filtrage direct sur chaînes ISO 8601 (l'ordre alphabétique = ordre temporel).
+      • Solution 2 : Conversion de 'source' et 'produit_id' en dtypes `category` (lookup entier en C).
+      • Complexité : O(H) où H = 20 876 lignes. Agrégation calculée en ~24.77 ms !
+
+2. BILAN CHRONOMÉTRIQUE :
+   ---------------------
+   • Étape 1 - Chargement IO           : 711.98 ms
+   • Étape 2 - Nettoyage vectorisé     :  40.43 ms
+   • Étape 3 - Rapprochement indexé    :   7.09 ms
+   • Étape 4 - Comparatif NumPy        :  18.68 ms
+   • Étape 5 - Synthèse statistique    :  11.29 ms
+   • Étape 6 - Résolution Panier       :   7.98 ms
+   • Étape 7 - Historique (20 876 l.)  :  24.77 ms  (chargement: 17.67 ms)
+   ---------------------------------------------------------
+   ★ TEMPS TOTAL D'EXÉCUTION DU PIPELINE : 852.52 ms (~0.853 s)
+
+================================================================================
